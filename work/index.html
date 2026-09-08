@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selected work — Joseph Kageyama Zhang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header id="hdr">
+    <div class="bar">
+      <a class="mark" href="../">Joseph Kageyama Zhang</a>
+      <nav>
+        <a href="../work/" class="current" aria-current="page">Work</a>
+        <a href="../writing/">Writing</a>
+        <a href="../#about">About Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="pagehead">
+      <h1 class="page-title">Selected work</h1>
+      <p class="tag in">Projects, roles, and experiments &mdash; the things I&rsquo;ve shipped or am building now.</p>
+    </div>
+
+    <section>
+      <div class="list">
+        <a class="row" href="#">
+          <span class="title">CFA Level II candidate</span>
+          <span class="meta"><span class="kind">Credential</span><span>2026</span></span>
+          <span class="desc">Passed Level I; sitting for Level II on the way to the charter.</span>
+        </a>
+        <a class="row" href="https://textmaddie.com">
+          <span class="title">Director of Sales at Text Maddie</span>
+          <span class="meta"><span class="kind">Role</span><span>2026</span></span>
+          <span class="desc">Leading sales and go-to-market for Maddie, an AI sales agent that runs over iMessage.</span>
+        </a>
+        <a class="row" href="#">
+          <span class="title">Quantitative Portfolio Project</span>
+          <span class="meta"><span class="kind">Project</span><span>To be announced</span></span>
+          <span class="desc">Details to come.</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; <span id="yr"></span> Joseph Kageyama Zhang</span>
+    <span>St. Louis</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var hdr = document.getElementById('hdr');
+  window.addEventListener('scroll', function(){
+    hdr.classList.toggle('stuck', window.scrollY > 10);
+  }, {passive:true});
+})();
+</script>
+
+</body>
+</html>

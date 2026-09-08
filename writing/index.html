@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writing — Joseph Kageyama Zhang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header id="hdr">
+    <div class="bar">
+      <a class="mark" href="../">Joseph Kageyama Zhang</a>
+      <nav>
+        <a href="../work/">Work</a>
+        <a href="../writing/" class="current" aria-current="page">Writing</a>
+        <a href="../#about">About Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="pagehead">
+      <h1 class="page-title">Writing</h1>
+      <p class="tag in">A working shelf &mdash; notes and essays on markets, machine learning, and where the two meet.</p>
+    </div>
+
+    <section>
+      <div class="list">
+        <a class="row" href="#">
+          <span class="title">[Your first piece]</span>
+          <span class="meta"><span class="kind">Essay</span><span>2026</span></span>
+          <span class="desc">Add a link when you&rsquo;re ready &mdash; lead with whatever best shows how you think.</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; <span id="yr"></span> Joseph Kageyama Zhang</span>
+    <span>St. Louis</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var hdr = document.getElementById('hdr');
+  window.addEventListener('scroll', function(){
+    hdr.classList.toggle('stuck', window.scrollY > 10);
+  }, {passive:true});
+})();
+</script>
+
+</body>
+</html>
