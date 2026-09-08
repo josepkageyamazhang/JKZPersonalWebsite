@@ -74,6 +74,8 @@ section{padding:52px 0 8px;}
 .head{display:flex;align-items:baseline;justify-content:space-between;padding-bottom:14px;margin-bottom:22px;border-bottom:1px solid var(--rule);}
 .head h2{font-family:"IBM Plex Sans",sans-serif;font-size:.92rem;font-weight:600;margin:0;color:var(--ink);}
 .head .note{font-family:"IBM Plex Sans",sans-serif;font-size:.82rem;color:var(--faint);}
+a.note{transition:color .16s ease;}
+a.note:hover{color:var(--accent);}
 
 .prose{max-width:var(--measure);}
 .prose p{margin:0 0 16px;}
